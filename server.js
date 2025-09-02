@@ -6,7 +6,6 @@ import contactsRouter from './routes/contacts.js';
 const app = express();
 app.use(express.json());
 
-// Simple health check
 app.get('/', (_req, res) => res.send('Hello World'));
 
 // Contacts API
@@ -25,5 +24,4 @@ connectToDb()
         process.exit(1);
     });
 
-// Optional handle to db elsewhere if needed:
 export function db() { return getDb(); }

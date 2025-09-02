@@ -4,7 +4,6 @@ import { getDb } from '../db/conn.js';
 
 const router = Router();
 
-// GET /contacts  -> all
 router.get('/', async (_req, res) => {
     try {
         const docs = await getDb().collection('contacts').find({}).toArray();
@@ -15,7 +14,6 @@ router.get('/', async (_req, res) => {
     }
 });
 
-// GET /contacts/:id -> single
 router.get('/:id', async (req, res) => {
     try {
         const { id } = req.params;
