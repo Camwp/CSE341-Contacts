@@ -6,6 +6,12 @@ import contactsRouter from './routes/contacts.js';
 const app = express();
 app.use(express.json());
 
+// server.js
+import swaggerUi from 'swagger-ui-express';
+import openapi from './swagger/swaggerapi.json' with { type: 'json' };
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapi));
+
 app.get('/', (_req, res) => res.send('Hello World'));
 
 // Contacts API
