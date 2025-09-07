@@ -1,0 +1,20 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "dpg-d2rjt4vfte5s738cpdqg-a.oregon-postgres.render.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "render contacts",
+            "database": "cse340_bg5r",
+            "username": "cse340cp",
+            "password": "qgfy15sdL1W8jEP4Z0ylUzaKRiZg9apV"
+        }
+    ]
+}
